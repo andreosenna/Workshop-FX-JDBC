@@ -19,6 +19,37 @@
                     <MenuItem mnemonicParsing="false" text="Close" />
                   </items>
                 </Menu>
+                  <Menu mnemonicParsing="false" text="Movimento">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Saida" />
+                        <MenuItem mnemonicParsing="false" text="Entrada" />
+                        <MenuItem mnemonicParsing="false" text="Consignação" />
+                        <MenuItem mnemonicParsing="false" text="Estoque" />
+                        <MenuItem mnemonicParsing="false" text="Perda" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Gestão">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Contas a Pagar" />
+                        <MenuItem mnemonicParsing="false" text="Contas a Receber" />
+                        <MenuItem mnemonicParsing="false" text="Relatório Gerencial" />
+                        <MenuItem mnemonicParsing="false" text="Outras Saídas e Entradas" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Configurações">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Taxas" />
+                        <MenuItem mnemonicParsing="false" text="Maquinas de Cobrança" />
+                        <MenuItem mnemonicParsing="false" text="Impressoras" />
+                        <MenuItem mnemonicParsing="false" text="Usuários" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Relatórios">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Vendas" />
+                        <MenuItem mnemonicParsing="false" text="Entradas" />
+                    </items>
+                  </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
                     <MenuItem fx:id="about" mnemonicParsing="false" onAction="#onMenuItemAbouotAction" text="About" />
