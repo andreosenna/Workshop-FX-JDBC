@@ -32,8 +32,7 @@ public class MainViewController implements Initializable{
 	
 	@FXML
 	public void onMenuItemDepartmentAction() {
-		System.out.println("Menu Department");
-	}
+		loadView("/gui/DepartmentList.fxml");	}
 	@FXML
 	public void onMenuItemAbouotAction() {
 	loadView("/gui/About.fxml");
@@ -45,13 +44,13 @@ public class MainViewController implements Initializable{
 		
 	}
 
-	private void loadView(String absoluteName) {
+	private synchronized void loadView(String absoluteName) { //synchronized garante que nãová ser perder na fila de execução
 		try {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 		VBox newVbox = loader.load();
 		Scene  mainScene = Main.getMainScene();
 		VBox mainVBox = (VBox)((ScrollPane) mainScene.getRoot()).getContent();
-		
+		// Utiliza a hierarquia da Cena para chegar até o Vbox em seguida seus filhos para poder limpar e substituir pelo conteudo da AboutView
 		Node mainMenu = mainVBox.getChildren().get(0);
 		mainVBox.getChildren().clear();
 		mainVBox.getChildren().add(mainMenu);
