@@ -19,7 +19,7 @@ public class Main extends Application {
 		try {
 			//instancia o objeto loader para poder manipula-lo antes de carregar
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
-			
+		
 			//Parent parent = loader.load();
 			ScrollPane scrollPane = loader.load();
 			scrollPane.setFitToHeight(true);
